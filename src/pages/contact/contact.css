@@ -1,0 +1,233 @@
+.contact-wrapper{
+    width: 100%;
+    min-height: 100%;
+    padding: 20px 250px;
+    gap: 50px;
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#light .contact-wrapper{
+    background-color: aliceblue;
+}
+
+.contact-socials{
+    flex: 1;
+}
+
+.contact-socials-header{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#light .contact-socials-header{
+    color: black;
+}
+
+.contact-socials-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-socials-wrapper div{
+    height: 80px;
+    width: 80%;
+    background-color: hsl(219, 4%, 7%);
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#light .contact-socials-wrapper div{
+    background-color: aliceblue;
+    color: black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    
+}
+
+.contact-icon{
+    font-size: 15px;
+}
+
+.contact-info{
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.read-more{
+    font-size: 11px;
+}
+
+.contact-form{
+    flex: 1.5;
+    height: auto;
+    z-index: 90 !important;
+}
+
+.contact-form form{
+    height: calc(100% - 50px);
+    width: 100%;
+}
+
+.form-input{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    border: 1px solid var(--color);
+}
+
+#light .form-input{
+    border: 1px solid black;
+}
+
+.input-lebel{
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    padding: 0 2px;
+    background-color: var(--bg-color);
+    color: var(--color);
+    font-size: 14px;
+}
+
+#light .input-lebel{
+    background-color: aliceblue;
+    color: black;
+}
+
+.form-input input{
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    color: var(--color);
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+#light .form-input input{
+    color: black;
+}
+
+.form-text-input{
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+    /* overflow: hidden; */
+    border: 1px solid var(--color);
+    height: 100px;
+}
+
+#light .form-text-input{
+    border: 1px solid black;
+}
+
+.form-text-input textarea{
+    height: 100%;
+    width: 100%;
+    padding: 10px 20px;
+    color: var(--color);
+    background-color: transparent;
+    /* overflow: hidden; */
+    background-color: var(--bg-color);
+    border: none;
+    outline: none;
+}
+
+#light .form-text-input textarea{
+    background-color: aliceblue;
+    color: black;
+}
+
+.contact-form button{
+    color: var(--bg-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    background-color: var(--color);
+    transition: .5s ease-in-out;
+    margin-top: 20px;
+    font-size: 13px;
+    padding: 8px 9px;
+    border-radius: 5px;
+}
+
+.contact-form button:hover{
+    background-color: var(--hover);
+}
+
+#light .contact-form button{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: aliceblue;
+    color: var(--light-color);
+}
+
+#light .contact-form button:hover{
+    background-color: var(--light-color);
+    color: aliceblue;
+}
+
+.toastify{
+    font-size: 11px;
+    padding: 7px 10px;
+}
+
+@media(max-width:1200px){
+    .contact-wrapper{
+        padding: 60px 200px;
+    }
+}
+@media(max-width:1000px){
+    .contact-wrapper{
+        padding: 60px 100px;
+    }
+}
+@media(max-width:850px){
+    .contact-wrapper{
+        padding: 60px 50px;
+    }
+}
+@media(max-width:800px){
+    .contact-wrapper{
+        padding: 60px 10px;
+        flex-direction: column;
+    }
+    .contact-form{
+        flex: 1;
+        width: 100%;
+        max-width: 400px;
+        z-index: 1 !important;
+        position: relative !important;
+    }
+    .contact-socials{
+        flex: 1;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 0 auto;
+        max-width: 400px;
+    }
+    .contact-socials-header{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .contact-socials-wrapper{
+        align-items: center;
+    }
+    .contact-socials-wrapper div{
+        width: 100%;
+    }
+}

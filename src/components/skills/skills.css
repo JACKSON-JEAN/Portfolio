@@ -1,0 +1,21 @@
+.skills{
+    display: flex;
+}
+
+.items-container{
+    flex: 1;
+}
+
+.skill-item {
+    padding: 5px 0;
+    font-size: 13px;
+}
+
+#light .skill-item {
+    color: black;
+}
+
+.skill-item span{
+    font-size: 11px;
+    color: rgb(147, 140, 140);
+}
